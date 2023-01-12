@@ -37,18 +37,50 @@ int main()
     // }
     // printf("%d",ans);
 
-    int a=0,b=1;
+    // int a=0,b=1;
+    // int n;
+    // scanf("%d",&n);
+    // if(n==1){
+    //     printf(0);
+    // }else if(n==2){
+    //     printf(1);
+    // }
+    // for(int i=3;i<=n;i++){
+    //     int temp=b;
+    //     b+=a;
+    //     a=temp;
+    // }
+    // printf("%d",b);
+
+    //power
+    // int b,c,ans=1;
+    // scanf("%d%d",&b,&c);
+    // for(int i=1;i<=c;i++){
+    //     ans*=b;
+    // }
+    // if(c==0){
+    //     ans=1;
+    // }
+    // printf("%d",ans);
+
     int n;
     scanf("%d",&n);
-    if(n==1){
-        printf(0);
-    }else if(n==2){
-        printf(1);
+    int x=n;
+    int ans=0;
+    if(n<0){
+        printf("false");
+    }else{
+        while(n!=0){
+            int r=n%10;
+            ans*=10;
+            ans+=r;
+            n=n/10;
+        }
+        if(x==ans){
+            printf("true");
+        }else{
+            printf("false");
+        }
     }
-    for(int i=3;i<=n;i++){
-        int temp=b;
-        b+=a;
-        a=temp;
-    }
-    printf("%d",b);
+    
 }
