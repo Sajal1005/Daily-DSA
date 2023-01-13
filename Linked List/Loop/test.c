@@ -1,4 +1,24 @@
 #include<stdio.h>
+
+int flag(int n){
+    if(n==0 || n==1){
+        return 0;
+    }else{
+        int flag=0;
+    for(int i=2;i<n;i++){
+        if(n%i==0){
+            flag=1;
+            break;
+        }
+    }
+    if(flag){
+        return 0;
+    }else{
+        return 1;
+    }
+    }
+}
+
 int main()
 {
     // char c;
@@ -63,24 +83,32 @@ int main()
     // }
     // printf("%d",ans);
 
-    int n;
-    scanf("%d",&n);
-    int x=n;
-    int ans=0;
-    if(n<0){
-        printf("false");
-    }else{
-        while(n!=0){
-            int r=n%10;
-            ans*=10;
-            ans+=r;
-            n=n/10;
-        }
-        if(x==ans){
-            printf("true");
-        }else{
-            printf("false");
+    // int n;
+    // scanf("%d",&n);
+    // int x=n;
+    // int ans=0;
+    // if(n<0){
+    //     printf("false");
+    // }else{
+    //     while(n!=0){
+    //         int r=n%10;
+    //         ans*=10;
+    //         ans+=r;
+    //         n=n/10;
+    //     }
+    //     if(x==ans){
+    //         printf("true");
+    //     }else{
+    //         printf("false");
+    //     }
+    // }
+
+    int n1,n2;
+    scanf("%d%d",&n1,&n2);
+    for(int i=n1;i<=n2;i++){
+        int ans = flag(i);
+        if(ans){
+            printf("%d\n",i);
         }
     }
-    
 }
