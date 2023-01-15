@@ -12,6 +12,7 @@ struct TreeNode {
 
 class Solution {
 public:
+    // try symmetric tree problem
     bool isSameTree(TreeNode* p, TreeNode* q) {
         if(p==NULL && q==NULL){
             return true;
