@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 
 int flag(int n){
     if(n==0 || n==1){
@@ -103,12 +104,53 @@ int main()
     //     }
     // }
 
-    int n1,n2;
-    scanf("%d%d",&n1,&n2);
-    for(int i=n1;i<=n2;i++){
-        int ans = flag(i);
-        if(ans){
-            printf("%d\n",i);
+    // int n1,n2;
+    // scanf("%d%d",&n1,&n2);
+    // for(int i=n1;i<=n2;i++){
+    //     int ans = flag(i);
+    //     if(ans){
+    //         printf("%d\n",i);
+    //     }
+    // }
+
+    // int n1,n2;
+    // scanf("%d%d",&n1,&n2);
+    // for(int i=n1;i<=n2;i++){
+    //     int x=i,y=x,d=0,sum=0;
+    //     int p;
+    //     while(x!=0){
+    //         d++;
+    //         x=x/10;
+    //     }
+    //     while(y!=0){
+    //         p=1;
+    //         int r=y%10;
+    //         for(int j=1;j<=d;j++)
+    //         {
+    //             p=p*r;
+    //         }
+    //         y=y/10;
+    //         sum+=(p);
+    //     }
+    //     if(sum==i){
+    //         printf("%d\n",i);
+    //     }
+    // }
+    
+
+    int n;
+    scanf("%d",&n);
+    int ma=0,mi=9;
+    while(n!=0){
+        int r=n%10;
+        if(r>ma){
+            ma=r;
         }
+        if(r<mi){
+            mi=r;
+        }
+        n=n/10;
     }
+    printf("%d\n%d",ma,mi);
+    
 }
