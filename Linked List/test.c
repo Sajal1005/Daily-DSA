@@ -138,19 +138,57 @@ int main()
     // }
     
 
-    int n;
-    scanf("%d",&n);
-    int ma=0,mi=9;
-    while(n!=0){
-        int r=n%10;
-        if(r>ma){
-            ma=r;
-        }
-        if(r<mi){
-            mi=r;
-        }
-        n=n/10;
+    // int n;
+    // scanf("%d",&n);
+    // int ma=0,mi=9;
+    // while(n!=0){
+    //     int r=n%10;
+    //     if(r>ma){
+    //         ma=r;
+    //     }
+    //     if(r<mi){
+    //         mi=r;
+    //     }
+    //     n=n/10;
+    // }
+    // printf("%d\n%d",ma,mi);
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=n-i-1;j>0;j--){
+    //         printf(" ");
+    //     }
+    //     for(int j=0;j<i+1;j++){
+    //         printf("*");
+    //     }
+    //     for(int j=0;j<i;j++){
+    //         printf("*");
+    //     }
+    //     printf("\n");
+    // }
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i+1;j++){
+    //         printf("%d",i+1);
+    //     }
+    //     printf("\n");
+    // }
+    int n1,n2;
+    char c;
+    scanf("%d%d",&n1,&n2);
+    scanf("%c",&c);
+    switch (c)
+    {
+    case '+':
+        printf("%d",n1+n2);
+        break;
+    case '-':
+        printf("%d",n1-n2);
+        break;
+    case '*':
+        printf("%d",n1*n2);
+        break;
+    case '/':
+        printf("%d",n1/n2);
+        break;
     }
-    printf("%d\n%d",ma,mi);
-    
 }
