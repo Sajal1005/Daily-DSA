@@ -172,23 +172,87 @@ int main()
     //     }
     //     printf("\n");
     // }
-    int n1,n2;
-    char c;
-    scanf("%d%d",&n1,&n2);
-    scanf("%c",&c);
-    switch (c)
-    {
-    case '+':
-        printf("%d",n1+n2);
-        break;
-    case '-':
-        printf("%d",n1-n2);
-        break;
-    case '*':
-        printf("%d",n1*n2);
-        break;
-    case '/':
-        printf("%d",n1/n2);
-        break;
+    // int n1,n2;
+    // char c;
+    // scanf("%d%d",&n1,&n2);
+    // scanf("%c",&c);
+    // switch (c)
+    // {
+    // case '+':
+    //     printf("%d",n1+n2);
+    //     break;
+    // case '-':
+    //     printf("%d",n1-n2);
+    //     break;
+    // case '*':
+    //     printf("%d",n1*n2);
+    //     break;
+    // case '/':
+    //     printf("%d",n1/n2);
+    //     break;
+    // }
+
+    int n;
+    scanf("%d",&n);
+    int n500=0, n100=0, n50=0, n20=0,n10=0,n5=0,n2=0,n1=0,x=n;
+    if(n>=500){
+        n500 = n/500;
+        n=n%500;
     }
+    if(n>=100){
+        n100 = n/100;
+        n=n%100;
+    }
+    if(n>=50){
+        n50 = n/50;
+        n=n%50;
+    }
+    if(n>=20){
+        n20 = n/20;
+        n=n%20;
+    }
+    if(n>=10){
+        n10 = n/10;
+        n=n%10;
+    }
+    if(n>=5){
+        n5 = n/5;
+        n=n%5;
+    }
+    if(n>=2){
+        n2 = n/2;
+        n=n%2;
+    }
+    if(n>=1){
+        n1 = n/1;
+        n=n%1;
+    }
+    printf("%d\n%d\n%d\n%d\n%d\n%d\n%d\n%d\n",n500,n100,n50,n20,n10,n5,n2,n1);
+    // float ans=0;
+    // if(n<=199){
+    //     ans+=(n*1.20);
+    // }else if(n>=200 && n<=400){
+    //     ans+=(n*1.50);
+    // }else if(n>=401 && n<=600){
+    //     ans+=(n*1.80);
+    // }else if(n>=601){
+    //     ans+=(n*2.00);
+    // }
+    // if(ans>500){
+    //     ans+=(.20*ans);
+    // }
+    // printf("%.2f",ans);
+
+    // int x,y;
+    // scanf("%d%d",&x,&y);
+    // if(x>0 && y>0){
+    //     printf("1st quad");
+    // }else if(x<0 && y>0){
+    //     printf("2nd quad");
+    // }else if(x>0 && y<0){
+    //     printf("4th quad");
+    // }else if(x<0 && y<0){
+    //     printf("3rd quad");
+    // }
+
 }
