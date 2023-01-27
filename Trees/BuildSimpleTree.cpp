@@ -32,16 +32,16 @@ void levelOrder(Node* root)
     {
       queue<Node*> q;
       q.push(root);
-      q.push(NULL);
+      q.push(NULL); // as a seperator
 
       while(!q.empty()){
           Node* front = q.front();
           q.pop();
 
             if(front==NULL){
-                cout<<endl;
+                cout<<endl; // new level
                 if(!q.empty()){
-                    q.push(NULL);
+                    q.push(NULL); // seperator
                 }
             }else{
                 cout<<front->val<<" ";

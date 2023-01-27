@@ -365,36 +365,38 @@ int main()
     // }
     // }
 
-    int x,y;
-    scanf("%d%d",&x,&y);
-    switch (x>0)
-    {
-    case 1:
-        switch (y>0)
-        {
-        case 1:
-            printf("1st quad");
-            break;
+    // int x,y;
+    // scanf("%d%d",&x,&y);
+    // switch (x>0)
+    // {
+    // case 1:
+    //     switch (y>0)
+    //     {
+    //     case 1:
+    //         printf("1st quad");
+    //         break;
         
-        default:
-        printf("4th quad");
-            break;
-        }
-        break;
+    //     default:
+    //     printf("4th quad");
+    //         break;
+    //     }
+    //     break;
     
-    default:
-    switch (y>0)
-    {
-    case 1:
-        printf("2nd quad");
-        break;
+    // default:
+    // switch (y>0)
+    // {
+    // case 1:
+    //     printf("2nd quad");
+    //     break;
     
-    default:
-    printf("3rd quad");
-        break;
-    }
-        break;
-    }
+    // default:
+    // printf("3rd quad");
+    //     break;
+    // }
+    //     break;
+    // }
+
+    
 
 }
 

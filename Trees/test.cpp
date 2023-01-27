@@ -19,15 +19,14 @@ int main()
             break;
         }
     }
-    int min = v[i];
+    int mini = v[i];
     i++;
     while(i<n){
-        if(v[i]>=min){
+        if(v[i]>=mini){
             cout<<"false";
             exit(0);
-            break;
         }else{
-            min=v[i];
+            mini=v[i];
             i++;
         }
     }

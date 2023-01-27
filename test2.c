@@ -1171,20 +1171,243 @@ int main(){
     //     ans = n*2;
     // }else if(n<=)
 
+    // int n;
+    // scanf("%d",&n);
+    // char c = n;
+    // if(c>='a' && c<'z'){
+    //     printf("%c %c %c %c %c",n-5,n-4,n-3,n-2,n-1);
+    // }else if(c>'A' && c<='Z'){
+    //     printf("%c %c %c %c %c",n+1,n+2,n+3,n+4,n+5);
+    // }else if(c>='0' && c<='9'){
+    //     if(n%2==0){
+    //         printf("Even");
+    //     }else{
+    //         printf("Odd");
+    //     }
+    // }else{
+    //     printf("Symbol");
+    // }
+
+    // int p,c,m;
+    // scanf("%d%d%d",&p,&c,&m);
+    // if(p>=65 && c>=55 && m>=50 && ((p+c+m)>=190 || m+p>=140)){
+    //     printf("Eligible");
+    // }else{
+    //     printf("Not Eligible");
+    // }
+
+    // int m,y;
+    // scanf("%d%d",&m,&y);
+    // if(m==1 || m==3 || m==5 || m==7 || m==8 || m==10 || m==12){
+    //     printf("Number of days are 31");
+    // }else if(m==2){
+    //     if(y%400==0 || (y%4==0 && y%100!=0)){
+    //         printf("Number of days are 29");
+    //     }else{
+    //         printf("Number of days are 28");
+    //     }
+    // }else{
+    //     printf("Number of days are 30");
+    // }
+    // int n;
+    // int w,y,d;
+    // scanf("%d",&n);
+    // if(n>=365){
+    //     y=n/365;
+    //     n-=(365*y);
+    // }
+    // if(n>=7){
+    //     w =n/7;
+    //     n-=(w*7);
+    // }
+    // if(n>=1){
+    //     d = n;
+    // }
+    // printf("%d\n%d\n%d",y,w,d);
+
+    // float n;
+    // scanf("%f",&n);
+    // float hra,da,pf;
+    // if(n<=100000){
+    //     hra = .20*n;
+    //     da = .90*n;
+    //     pf = .15*n;
+    // }else if(n>100000 && n<=500000){
+    //     hra = .25*n;
+    //     da = .90*n;
+    //     pf = .20*n;
+    // }else {
+    //     hra = .30*n;
+    //     da = .90*n;
+    //     pf = .25*n;
+    // }
+    // printf("%.2f\n%.2f\n%.2f\n%.2f\n%.2f\n%.2f",n,hra,da,pf,n+hra+da+pf,n+hra+da);
+
+    // int n;
+    // scanf("%d",&n);
+    // float km,m;
+    // if(n>=100000){
+    //     km = n/100000;
+    //     n-=(km*100000);
+    // }
+    // m = n;
+    // printf("%.0f %.0f",km,m);
+
+    // int n,m,p,k,j;
+    // scanf("%d%d%d%d%d",&n,&m,&p,&k,&j);
+    // if((k%m==0)){
+    //     n-=(k/m);
+    // }else{
+    //     n-=(k/m +1);
+    // }
+    // if((j%p==0)){
+    //     n-=(j/p);
+    // }else{
+    //     n-=(j/p +1);
+    // }
+    // printf("%d",n);
+
+    // int n;
+    // scanf("%d",&n);
+    // if(n%400==0 || (n%4==0 && n%100!=0)){
+    //     printf("leap year");
+    // }else{
+    //     printf("Not");
+    // }
+
+    // int n;
+    // scanf("%d",&n);
+    // int y,w,d;
+    // if(n>=365){
+    //     y=n/365;
+    //     n-=(y*365);
+    // }
+    // if(n>=7){
+    //     w=n/7;
+    //     n-=(w*7);
+    // }
+    // d=n;
+    // printf("%d\n%d\n%d",y,w,d);
+
+    // int n;
+    // scanf("%d",&n);
+    // int km,m,cm;
+    // if(n>=100000){
+    //     km=n/100000;
+    //     n-=(km*100000);
+    // }
+    // if(n>=100){
+    //     m=n/100;
+    //     n-=(m*100);
+    // }
+    // cm=n;
+    // printf("%d\n%d\n%d",km,m,cm);
+
+    // int n;
+    // scanf("%d",&n);
+    // float hra,da,pf;
+
+    // int n;
+    // char c;
+    // scanf("%d %c",&n,&c);
+    // float ans = 0;
+    // if(c=='c' || c=='C'){
+    //     ans = (9.0/5.0)*n + 32;
+    //     printf("%.2fF",ans);
+    // }else{
+    //     ans = (n-32.0)*(5.0/9.0);
+    //     printf("%.2fC",ans);
+    // }
+
+    // int n;
+    // scanf("%d",&n);
+    // float ans;
+    // if(n<=100 && n>=0){
+    //     ans = (n*2.0);
+    // }else if(n>100 && n<=200){
+    //     ans = (n*4.0);
+    // }else if(n>200){
+    //     ans=(n*6.0);
+    // }  
+    // if(ans>300){
+    //     ans+=(ans*.20);
+    // }
+    // printf("%.2f",ans);
+
+    // int n1,n2,n3,n4,n5;
+    // scanf("%d%d%d%d%d",&n1,&n2,&n3,&n4,&n5);
+    // if(n1>=40){
+    //     printf("pass in %c",n1);
+    // }else{
+    //     printf("fail in %c",n1);
+    // }
+
+    // 200 - 400
+    // 200 -300
+    // *4
+    // 300 - 400
+    // 300 - 400
+
+    // int a,b,c;
+    // scanf("%d%d%d",&a,&b,&c);
+    // if(a==b && a==c){
+    //     printf("Equailateral Triangle");
+    // }else if((a==b || a==c || b==c)){
+    //     printf("Isosceles");
+    // }else{
+
+    // }
+
+    // int n;
+    // scanf("%d",&n);
+    // float ans;
+    // if(n<=50){
+    //     ans = n*.50;
+    // }else if(n<=150){
+    //     ans = 25 + (n-50)*.75;
+    // }else if(n<=250){
+    //     ans = 100 + (n-150)*1.20;
+    // }else{
+    //     ans = 220 + (n-250)*1.50;
+    // }
+    // ans+=(ans*.20);
+    // printf("%.2f",ans);
+
+    // int n;
+    //  scanf("%d",&n);
+    //  int ans=0;
+    //  while(n!=0){
+    //     int r=n%10;
+    //     ans+=r;
+    //     n=n/10;
+    //  }
+    //  char c = ans+64;
+    //  printf("%c",c);
+    // if(n==1){
+    //     printf("Monday");
+    // }else if(n==2){
+    //     printf("Tuesday");
+    // }else if(n==3){
+    //     printf("Wednesday");
+    // }else if(n==4){
+    //     printf("Thursday");
+    // }else if(n==5){
+    //     printf("Friday");
+    // }else if(n==6){
+    //     printf("Saturday");
+    // }else if(n==7){
+    //     printf("Sunday");
+    // }else{
+    //     printf("Invalid Input");
+    // }
+
     int n;
     scanf("%d",&n);
-    char c = n;
-    if(c>='a' && c<'z'){
-        printf("%c %c %c %c %c",n-5,n-4,n-3,n-2,n-1);
-    }else if(c>'A' && c<='Z'){
-        printf("%c %c %c %c %c",n+1,n+2,n+3,n+4,n+5);
-    }else if(c>='0' && c<='9'){
-        if(n%2==0){
-            printf("Even");
-        }else{
-            printf("Odd");
-        }
-    }else{
-        printf("Symbol");
+    int count=0;
+    while(n!=0){
+        int r=n%10;
+        if(r==5){count++;}
+        n=n/10;
     }
+    printf("%d",count);
 }
