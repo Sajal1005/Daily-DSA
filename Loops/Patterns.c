@@ -228,17 +228,130 @@ int main(){
     // 0101
     // 10101
 
-    for(int i=0;i<n;i++){
-        for(int j=0;j<i+1;j++){
-            if((i+j)%2==0){
-                printf("%d",1);
-            }else{
-                printf("%d",0);
-            }
-        }
-            for(int j=0;j<n-i-1;j++){
-                printf(" ");
-            }
-        printf("\n");
-    }
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i+1;j++){
+    //         if((i+j)%2==0){
+    //             printf("%d",1);
+    //         }else{
+    //             printf("%d",0);
+    //         }
+    //     }
+    //         for(int j=0;j<n-i-1;j++){
+    //             printf(" ");
+    //         }
+    //     printf("\n");
+    // }
+
+
+    // NUMBER + 2 TRIANGLES
+
+    // 1       1
+    // 12     21
+    // 123   321
+    // 1234 4321
+    // 1234554321
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i+1;j++){
+    //         printf("%d",j+1);
+    //     }
+    //     for(int j=0;j<n+2-2*i;j++){
+    //         printf(" ");
+    //     }
+    //     for(int j=0;j<i+1;j++){
+    //         printf("%d",i+1-j);
+    //     }
+    //     printf("\n");
+    // }
+
+
+    // NUMBER PATTERN
+
+    // 1
+    // 2 3
+    // 4 5 6
+    // 7 8 9 10
+    // 11 12 13 14 15
+
+    // int k=1;
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i+1;j++){
+    //         printf("%d ",k);
+    //         k++;
+    //     }
+    //     printf("\n");
+    // }
+
+
+
+    // ALPABETICAL TRIANGLE
+
+    // A
+    // AB
+    // ABC
+    // ABCD
+    // ABCDE
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i+1;j++){
+    //         printf("%c",j+65);
+    //     }
+    //     printf("\n");
+    // }
+
+
+
+    // ALPHABET DOWN TRIANGLE
+    
+    // ABCDE
+    // ABCD
+    // ABC
+    // AB
+    // A
+    
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n-i;j++){
+    //         printf("%c",65+j);
+    //     }
+    //     printf("\n");
+    // }
+
+    // ALPHA TRIANGLE 
+
+    // A
+    // BB
+    // CCC
+    // DDDD
+    // EEEEE
+    
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i+1;j++){
+    //         printf("%c",i+65);
+    //     }
+    //     printf("\n");
+    // }
+
+
+    // ALPHA PYRAMID
+
+    //    A
+    //   ABA
+    //  ABCBA
+    // ABCDCBA
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n-i-1;j++){
+    //         printf(" ");
+    //     }
+    //     for(int j=0;j<i+1;j++){
+    //         printf("%c",65+j);
+    //     }
+    //     for(int j=0;j<i;j++){
+    //         printf("%c",64+i-j);
+    //     }
+    //     printf("\n");
+    // }
+
+
+    
 }
