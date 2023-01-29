@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 
 // 1. For the Outer loop count the no. of lines
 // 2. For the Inner loop count the no. of columns
@@ -353,5 +354,134 @@ int main(){
     // }
 
 
-    
+    // ALPHA REVERSE TRIANGLE
+
+    // E
+    // D E
+    // C D E
+    // B C D E
+    // A B C D E
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i+1;j++){
+    //         printf("%c ",64+n-i+j);
+    //     }
+    //     printf("\n");
+    // }
+
+
+    //HOLLOW DIAMOND
+
+    // **********
+    // ****  ****
+    // ***    ***
+    // **      **
+    // *        *
+    // *        *
+    // **      **
+    // ***    ***
+    // ****  ****
+    // **********
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n-i;j++){
+    //         printf("*");
+    //     }
+    //     for(int j=0;j<2*i;j++){
+    //         printf(" ");
+    //     }
+    //     for(int j=0;j<n-i;j++){
+    //         printf("*");
+    //     }
+    //     printf("\n");
+    // }
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i+1;j++){
+    //         printf("*");
+    //     }
+    //     for(int j=0;j<2*n-2*i-2;j++){
+    //         printf(" ");
+    //     }
+    //     for(int j=0;j<i+1;j++){
+    //         printf("*");
+    //     }
+    //     printf("\n");
+    // }
+
+
+
+    // BUTTERFLY
+
+    // *        *
+    // **      **
+    // ***    ***
+    // ****  ****
+    // **********
+    // ****  ****
+    // ***    ***
+    // **      **
+    // *        *
+    int z=2*n-2;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<i+1;j++){
+            printf("*");
+        }
+        for(int j=0;j<z;j++){
+            printf(" ");
+        }
+        z-=2;
+        for(int j=0;j<i+1;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    z=2;
+    for(int i=0;i<n-1;i++){
+        for(int j=0;j<n-i-1;j++){
+            printf("*");
+        }
+        for(int j=0;j<z;j++){
+            printf(" ");
+        }
+        z+=2;
+        for(int j=0;j<n-i-1;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+
+
+
+    // HOLLOW SQUARE
+
+    // *****
+    // *   *
+    // *   *
+    // *   *
+    // *****
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n;j++){
+    //         if(i==0 || i==n-1 || j==0 || j==n-1){
+    //             printf("*");
+    //         }else{
+    //             printf(" ");
+    //         }
+    //     }
+    //     printf("\n");
+    // }
+
+
+
+    // MATRIX QUESTION
+    // for(int i=0;i<2*n-1;i++){
+    //     for(int j=0;j<2*n-1;j++){
+    //         int top=i;
+    //         int left=j;
+    //         int right = (2*n)-2-j;
+    //         int bottom = (2*n)-2-i;
+    //         printf("%d",(n-(fmin(fmin(top,bottom),fmin(right,left)))));
+    //     }
+    //     printf("\n");
+    // }
 }
