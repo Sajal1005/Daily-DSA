@@ -5,10 +5,45 @@
 // 2. For the Inner loop count the no. of columns
 // 3. Print whatever needed in nested
 
+void odd(int n){
+    if(n%2==0){
+        printf("EVEN\n");
+    }else{
+        printf("ODD\n");
+    }
+}
+
+void palindrome(int n){
+    int z=n;
+    int ans=0;
+    while(n!=0){
+        int r= n%10;
+        ans*=10;
+        ans+=r;
+        n=n/10;
+    }
+    if(ans==z){
+        printf("PALINDROME\n");
+    }else{
+        printf("NOT PALINDROME\n");
+    }
+}
+
+void multiple(int n){
+    int ans=0;
+    for(int i=0;i<=n;i++){
+        ans+=i;
+    }
+    printf("SUM IS %d",ans);
+}
+
 int main(){
     
     int n;
     scanf("%d",&n);
+    odd(n);
+    palindrome(n);
+    multiple(n);
     
     // SQUARE PATTERN
 
@@ -129,6 +164,26 @@ int main(){
     // }
 
 
+    // HOLLOW PYRAMID
+
+    //     *
+    //    * *
+    //   *   *
+    //  *     *
+    // *********
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n-i-1;j++){
+    //         printf(" ");
+    //     }
+    //     for(int j=0;j<2*i+1;j++){
+    //         if(i==0 || j==0 || i==n-1 || j==2*i){
+    //             printf("*");
+    //         }else{printf(" ");}
+    //     }
+    //     printf("\n");
+    // }
+
     // INVERTED PYRAMID
 
     // *********
@@ -185,6 +240,35 @@ int main(){
     //     }
     //     for(int j=0;j<i;j++){
     //         printf(" ");
+    //     }
+    //     printf("\n");
+    // }
+
+    //     *
+    //    ***
+    //   *****
+    //  *******
+    // *********
+    //  *******
+    //   *****
+    //    ***
+    //     *
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n-i-1;j++){
+    //         printf(" ");
+    //     }
+    //     for(int j=0;j<2*i+1;j++){
+    //         printf("*");
+    //     }
+    //     printf("\n");
+    // }
+    // for(int i=0;i<n-1;i++){
+    //     for(int j=0;j<i+1;j++){
+    //         printf(" ");
+    //     }
+    //     for(int j=0;j<2*n-2*i-3;j++){
+    //         printf("*");
     //     }
     //     printf("\n");
     // }
@@ -421,34 +505,35 @@ int main(){
     // ***    ***
     // **      **
     // *        *
-    int z=2*n-2;
-    for(int i=0;i<n;i++){
-        for(int j=0;j<i+1;j++){
-            printf("*");
-        }
-        for(int j=0;j<z;j++){
-            printf(" ");
-        }
-        z-=2;
-        for(int j=0;j<i+1;j++){
-            printf("*");
-        }
-        printf("\n");
-    }
-    z=2;
-    for(int i=0;i<n-1;i++){
-        for(int j=0;j<n-i-1;j++){
-            printf("*");
-        }
-        for(int j=0;j<z;j++){
-            printf(" ");
-        }
-        z+=2;
-        for(int j=0;j<n-i-1;j++){
-            printf("*");
-        }
-        printf("\n");
-    }
+
+    // int z=2*n-2;
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i+1;j++){
+    //         printf("*");
+    //     }
+    //     for(int j=0;j<z;j++){
+    //         printf(" ");
+    //     }
+    //     z-=2;
+    //     for(int j=0;j<i+1;j++){
+    //         printf("*");
+    //     }
+    //     printf("\n");
+    // }
+    // z=2;
+    // for(int i=0;i<n-1;i++){
+    //     for(int j=0;j<n-i-1;j++){
+    //         printf("*");
+    //     }
+    //     for(int j=0;j<z;j++){
+    //         printf(" ");
+    //     }
+    //     z+=2;
+    //     for(int j=0;j<n-i-1;j++){
+    //         printf("*");
+    //     }
+    //     printf("\n");
+    // }
 
 
 
@@ -472,6 +557,218 @@ int main(){
     // }
 
 
+    // RHOMBUS
+
+    //     *****
+    //    *****
+    //   *****
+    //  *****
+    // *****
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n-i-1;j++){
+    //         printf(" ");
+    //     }
+    //     for(int j=0;j<n;j++){
+    //         printf("*");
+    //     }
+    //     printf("\n");
+    // }
+
+
+    // SQUARE WITH DIAGNOL
+
+    // *****
+    // ** **
+    // * * *
+    // ** **
+    // *****
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n;j++){
+    //         if(i==0 || i==n-1 || j==0 || j==n-1 
+    //         || i==j || i+j==n-1){
+    //             printf("*");
+    //         }else{
+    //             printf(" ");
+    //         }
+    //     }
+    //     printf("\n");
+    // }
+
+    // NUMBERS WITH DIAGNOL
+
+    // 10001
+    // 01010
+    // 00100
+    // 01010
+    // 10001
+
+    // for(int i=0;i<n;i++){
+    //         for(int j=0;j<n;j++){
+    //             if(i+j==n-1 || i==j){
+    //                 printf("%d",1);
+    //             }else{
+    //                 printf("%d",0);
+    //             }
+    //         }
+    //         printf("\n");
+    //  }
+
+
+    // NUMBER SPECIAL
+    
+    // 01110
+    // 10001
+    // 10001
+    // 10001
+    // 01110
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n;j++){
+    //         if((i==0 || j==0 || i==n-1 || j==n-1) && i!=j && j-i!=n-1 && i-j!=n-1){
+    //             printf("%d",1);
+    //         }else{
+    //             printf("%d",0);
+    //         }
+    //     }
+    //     printf("\n");
+    // }
+
+
+    // RIGHT ARROW STAR
+
+    // *****
+    //   ****
+    //     ***
+    //       **
+    //         *
+    //       **
+    //     ***
+    //   ****
+    // *****
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<2*i;j++){
+    //         printf(" ");
+    //     }
+    //     for(int j=0;j<n-i;j++){
+    //         printf("*");
+    //     }
+    //     printf("\n");
+    // }
+    // for(int i=0;i<n-1;i++){
+    //     for(int j=0;j<2*n-2*i-4;j++){
+    //         printf(" ");
+    //     }
+    //     for(int j=0;j<i+2;j++){
+    //         printf("*");
+    //     }
+    //     printf("\n");
+    // }
+
+
+    // LEFT ARROW
+
+    //     *****
+    //    ****
+    //   ***
+    //  **
+    // *
+    //  **
+    //   ***
+    //    ****
+    //     *****
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<n-i-1;j++){
+    //         printf(" ");
+    //     }
+    //     for(int j=0;j<n-i;j++){
+    //         printf("*");
+    //     }
+    //     printf("\n");
+    // }
+    // for(int i=0;i<n-1;i++){
+    //     for(int j=0;j<i+1;j++){
+    //         printf(" ");
+    //     }
+    //     for(int j=0;j<i+2;j++){
+    //         printf("*");
+    //     }
+    //     printf("\n");
+    // }
+
+
+    // PLUS STAR 
+
+    //     +
+    //     +
+    //     +
+    //     +
+    // +++++++++
+    //     +
+    //     +
+    //     +
+    //     +
+
+    // for(int i=0;i<n-1;i++){
+    //     for(int j=0;j<n-1;j++){
+    //         printf(" ");
+    //     }
+    //     printf("+");
+    //     printf("\n");
+    // }
+    // for(int i=0;i<2*n-1;i++){
+    //     printf("+");
+    // }
+    // printf("\n");
+    // for(int i=0;i<n-1;i++){
+    //     for(int j=0;j<n-1;j++){
+    //         printf(" ");
+    //     }
+    //     printf("+");
+    //     printf("\n");
+    // }
+
+
+    // X STAR
+
+    // *       *
+    //  *     *
+    //   *   *
+    //    * *
+    //     *
+    //    * *
+    //   *   *
+    //  *     *
+    // *       *
+
+    // for(int i=0;i<n;i++){
+    //     for(int j=0;j<i;j++){
+    //         printf(" ");
+    //     }
+    //     printf("*");
+    //     for(int j=0;j<n+2-2*i;j++){
+    //         printf(" ");
+    //     }
+    //     if(i!=n-1){
+    //         printf("*");
+    //     }
+    //     printf("\n");
+    // }
+    // for(int i=0;i<n-1;i++){
+    //     for(int j=0;j<n-2-i;j++){
+    //         printf(" ");
+    //     }
+    //     printf("*");
+    //     for(int j=0;j<2*i+1;j++){
+    //         printf(" ");
+    //     }
+    //     printf("*");
+    //     printf("\n");
+    // }
+
 
     // MATRIX QUESTION
     // for(int i=0;i<2*n-1;i++){
@@ -484,4 +781,7 @@ int main(){
     //     }
     //     printf("\n");
     // }
+
+        
+    
 }

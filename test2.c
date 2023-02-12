@@ -1401,13 +1401,31 @@ int main(){
     //     printf("Invalid Input");
     // }
 
+    // int n;
+    // scanf("%d",&n);
+    // int count=0;
+    // while(n!=0){
+    //     int r=n%10;
+    //     if(r==5){count++;}
+    //     n=n/10;
+    // }
+    // printf("%d",count);
+
     int n;
     scanf("%d",&n);
+    int ans=n;
+    int l=n%10,f;
     int count=0;
     while(n!=0){
-        int r=n%10;
-        if(r==5){count++;}
+        count++;
+        f=n%10;
         n=n/10;
     }
-    printf("%d",count);
+    ans-=l;
+    ans+=f;
+    ans-=(f*pow(10,count-1));
+    
+    ans+=(l*pow(10,count-1));
+    
+    printf("%d",ans+1);
 }
